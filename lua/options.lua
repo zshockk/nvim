@@ -26,3 +26,7 @@ o.signcolumn = "yes"
 o.updatetime = 50
 
 o.clipboard = "unnamedplus"
+
+o.showcmd = false
+o.timeout = true
+o.timeoutlen = 300
