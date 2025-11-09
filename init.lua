@@ -11,6 +11,10 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+if vim.g.vscode then
+  return require "utils.vscode"
+end
+
 local lazy_config = require "configs.lazy"
 
 -- load plugins
