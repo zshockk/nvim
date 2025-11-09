@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 if vim.g.vscode then
-  return require "utils.vscode.main"
+  return require "utils.vscode.init"
 end
 
 local lazy_config = require "configs.lazy"
