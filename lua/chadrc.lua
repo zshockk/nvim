@@ -8,7 +8,7 @@ local M = {}
 
 M.base46 = {
   theme = "ashes",
-  transparency = true,
+  transparency = false,
 
   hl_override = {
     Comment = { italic = true },
@@ -20,6 +20,7 @@ M.nvdash = {
   load_on_startup = true,
   header = headers[math.random(1, #headers)],
 }
+
 M.ui = {
   tabufline = {
     lazyload = false,
