@@ -1,3 +1,4 @@
+local cmp_config = require "configs.cmp"
 return {
   {
     "stevearc/conform.nvim",
@@ -6,13 +7,22 @@ return {
   },
 
   {
-    "L3MON4D3/LuaSnip",
+    "hrsh7th/nvim-cmp",
     lazy = false,
+    event = "InsertEnter",
+    dependencies = cmp_config.dependencies,
+    opts = cmp_config.opts,
   },
 
   {
-    "hrsh7th/nvim-cmp",
-    lazy = false,
+    "L3MON4D3/LuaSnip",
+    lazy = true,
+    build = "make install_jsregexp",
+  },
+
+  {
+    "saadparwaiz1/cmp_luasnip",
+    enabled = false,
   },
 
   {
